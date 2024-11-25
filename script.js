@@ -35,7 +35,11 @@ const fetchRecipes = async (alpha) => {
       recipeContainer.appendChild(recipeDiv);
     });
   } catch (error) {
-    recipeContainer.innerHTML = "<h2>Error in fetching recipes...</h2>";
+    recipeContainer.innerHTML = ` <div style="display: flex; align-items: center; gap: 10px;">
+    <img src="./images/photo-error-illustration.jpg" alt="Error icon" style="width: 80px; height: auto; background: none; border: none;"> 
+    <h2 style="margin: 0;">Error in fetching recipes...</h2>
+        </div>
+    `;
   }
 };
 
