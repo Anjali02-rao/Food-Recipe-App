@@ -139,7 +139,6 @@ h2 {
   font-size: 20px;
   transition: all 0.5s ease-in-out;
   overflow-y: scroll;
-  /* z-index: 1000; */
 }
 
 .recipeDetailsContent {
@@ -147,9 +146,6 @@ h2 {
 }
 
 h3 {
-  /* margin-top: 24px;
-  margin-left: 20px;
-  margin-bottom: 14px; */
   padding: 2px;
 }
 
