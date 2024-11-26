@@ -60,10 +60,10 @@ const fetchIngredients = (meal) => {
 const openRecipePopup = (meal) => {
   recipeDetailsContent.innerHTML = `
         <h2 class="recipeName">${meal.strMeal}</h2>
-        <h3>Ingredients:</h3>
+        <h4>Ingredients:</h4>
         <ul class="ingredientsList">${fetchIngredients(meal)}</ul>
         <div>
-        <h3>Instructions:</h3>
+        <h4>Instructions:</h4>
         <p class="recipeInstructions">${meal.strInstructions}</p>
         </div>
       `;
