@@ -99,6 +99,7 @@ h2 {
 .recipe h3 {
   font-weight: bold;
   margin-block: 5px;
+  padding: 2px;
 }
 
 .recipe p {
@@ -145,13 +146,10 @@ h2 {
   padding: 30px;
 }
 
-h3 {
-  padding: 2px;
-}
-
 h4 {
   margin-left: 24px;
   margin-top: 20px;
+  margin-bottom: 8px;
 }
 
 .recipeName {

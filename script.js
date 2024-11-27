@@ -4,11 +4,11 @@ const recipeContainer = document.querySelector(".recipe-container");
 const recipeDetailsContent = document.querySelector(".recipe-details-content");
 const recipeCloseBtn = document.querySelector(".recipe-close-btn");
 
-const fetchRecipes = async (alpha) => {
+const fetchRecipes = async (query) => {
   recipeContainer.innerHTML = "<h2>Fetching recipes...</h2>";
   try {
     const data = await fetch(
-      `https://www.themealdb.com/api/json/v1/1/search.php?s=${alpha}`
+      `https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`
     );
     const response = await data.json();
 
@@ -78,7 +78,8 @@ searchBtn.addEventListener("click", (e) => {
   e.preventDefault();
   const searchInput = searchBox.value.trim();
   if (!searchInput) {
-    recipeContainer.innerHTML = "<h2>Please enter your favorite recipe.</h2>";
+    recipeContainer.innerHTML =
+      "<h2>Please enter your favorite recipe name.</h2>";
     return;
   }
   fetchRecipes(searchInput);
